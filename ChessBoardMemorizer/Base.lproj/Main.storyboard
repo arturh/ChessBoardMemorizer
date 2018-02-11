@@ -30,13 +30,24 @@
                                             <constraint firstAttribute="width" secondItem="w5I-UV-Kwn" secondAttribute="height" id="H0g-Wt-qfh"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQY-L2-RCS" userLabel="Cell 2">
+                                        <rect key="frame" x="47" y="0.0" width="47" height="47"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bQY-L2-RCS" secondAttribute="height" id="rIl-Mf-URr"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="w5I-UV-Kwn" firstAttribute="leading" secondItem="7Is-BA-PHr" secondAttribute="leading" id="Hy9-F4-7oV"/>
                                     <constraint firstItem="w5I-UV-Kwn" firstAttribute="width" secondItem="7Is-BA-PHr" secondAttribute="width" multiplier="0.125" id="KgV-Np-v3z"/>
                                     <constraint firstItem="w5I-UV-Kwn" firstAttribute="top" secondItem="7Is-BA-PHr" secondAttribute="top" id="LzZ-9p-2Ia"/>
+                                    <constraint firstItem="bQY-L2-RCS" firstAttribute="height" secondItem="w5I-UV-Kwn" secondAttribute="height" id="OxU-qC-2pW"/>
                                     <constraint firstAttribute="width" secondItem="7Is-BA-PHr" secondAttribute="height" id="QQP-Y8-l8K"/>
+                                    <constraint firstItem="bQY-L2-RCS" firstAttribute="leading" secondItem="w5I-UV-Kwn" secondAttribute="trailing" id="QZh-Ac-XON"/>
+                                    <constraint firstItem="bQY-L2-RCS" firstAttribute="width" secondItem="bQY-L2-RCS" secondAttribute="height" id="fdX-PF-G5j"/>
+                                    <constraint firstItem="bQY-L2-RCS" firstAttribute="top" secondItem="7Is-BA-PHr" secondAttribute="top" id="mMb-Ea-kec"/>
                                 </constraints>
                             </view>
                         </subviews>
