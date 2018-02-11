@@ -37,17 +37,40 @@
                                             <constraint firstAttribute="width" secondItem="bQY-L2-RCS" secondAttribute="height" id="rIl-Mf-URr"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azd-IS-vHL" userLabel="Cell 3">
+                                        <rect key="frame" x="94" y="0.0" width="47" height="47"/>
+                                        <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="azd-IS-vHL" secondAttribute="height" id="Diy-FT-DgA"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yur-Jg-0EE" userLabel="Cell 4">
+                                        <rect key="frame" x="141" y="0.0" width="47" height="47"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Yur-Jg-0EE" secondAttribute="height" id="oaX-bM-cHq"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="azd-IS-vHL" firstAttribute="top" secondItem="w5I-UV-Kwn" secondAttribute="top" id="3U4-S1-OOJ"/>
+                                    <constraint firstItem="Yur-Jg-0EE" firstAttribute="width" secondItem="w5I-UV-Kwn" secondAttribute="width" id="4pq-q7-i8F"/>
+                                    <constraint firstItem="azd-IS-vHL" firstAttribute="width" secondItem="azd-IS-vHL" secondAttribute="height" id="Brh-u0-fil"/>
                                     <constraint firstItem="w5I-UV-Kwn" firstAttribute="leading" secondItem="7Is-BA-PHr" secondAttribute="leading" id="Hy9-F4-7oV"/>
                                     <constraint firstItem="w5I-UV-Kwn" firstAttribute="width" secondItem="7Is-BA-PHr" secondAttribute="width" multiplier="0.125" id="KgV-Np-v3z"/>
                                     <constraint firstItem="w5I-UV-Kwn" firstAttribute="top" secondItem="7Is-BA-PHr" secondAttribute="top" id="LzZ-9p-2Ia"/>
                                     <constraint firstItem="bQY-L2-RCS" firstAttribute="height" secondItem="w5I-UV-Kwn" secondAttribute="height" id="OxU-qC-2pW"/>
+                                    <constraint firstItem="Yur-Jg-0EE" firstAttribute="leading" secondItem="azd-IS-vHL" secondAttribute="trailing" id="PM3-Sf-Ehd"/>
                                     <constraint firstAttribute="width" secondItem="7Is-BA-PHr" secondAttribute="height" id="QQP-Y8-l8K"/>
                                     <constraint firstItem="bQY-L2-RCS" firstAttribute="leading" secondItem="w5I-UV-Kwn" secondAttribute="trailing" id="QZh-Ac-XON"/>
+                                    <constraint firstItem="Yur-Jg-0EE" firstAttribute="width" secondItem="Yur-Jg-0EE" secondAttribute="height" id="ZWa-Wc-rzc"/>
+                                    <constraint firstItem="Yur-Jg-0EE" firstAttribute="width" secondItem="Yur-Jg-0EE" secondAttribute="height" id="cVZ-Md-gk0"/>
+                                    <constraint firstItem="azd-IS-vHL" firstAttribute="leading" secondItem="bQY-L2-RCS" secondAttribute="trailing" id="d4q-Nr-7CX"/>
                                     <constraint firstItem="bQY-L2-RCS" firstAttribute="width" secondItem="bQY-L2-RCS" secondAttribute="height" id="fdX-PF-G5j"/>
+                                    <constraint firstItem="Yur-Jg-0EE" firstAttribute="top" secondItem="w5I-UV-Kwn" secondAttribute="top" id="hRv-tX-Uef"/>
                                     <constraint firstItem="bQY-L2-RCS" firstAttribute="top" secondItem="7Is-BA-PHr" secondAttribute="top" id="mMb-Ea-kec"/>
+                                    <constraint firstItem="azd-IS-vHL" firstAttribute="width" secondItem="w5I-UV-Kwn" secondAttribute="width" id="xRI-E8-vcX"/>
                                 </constraints>
                             </view>
                         </subviews>
