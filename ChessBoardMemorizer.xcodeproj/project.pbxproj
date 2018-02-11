@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BB1725C2030992900307EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1725B2030992900307EEC /* AppDelegate.swift */; };
+		7BB1725E2030992900307EEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1725D2030992900307EEC /* ViewController.swift */; };
+		7BB172612030992900307EEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB1725F2030992900307EEC /* Main.storyboard */; };
+		7BB172632030992900307EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB172622030992900307EEC /* Assets.xcassets */; };
+		7BB172662030992900307EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB172642030992900307EEC /* LaunchScreen.storyboard */; };
+		7BB172712030992900307EEC /* ChessBoardMemorizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB172702030992900307EEC /* ChessBoardMemorizerTests.swift */; };
+		7BB1727C2030992900307EEC /* ChessBoardMemorizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1727B2030992900307EEC /* ChessBoardMemorizerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BB1726D2030992900307EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BB172502030992900307EEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BB172572030992900307EEC;
+			remoteInfo = ChessBoardMemorizer;
+		};
+		7BB172782030992900307EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BB172502030992900307EEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BB172572030992900307EEC;
+			remoteInfo = ChessBoardMemorizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BB172582030992900307EEC /* ChessBoardMemorizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessBoardMemorizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB1725B2030992900307EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BB1725D2030992900307EEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BB172602030992900307EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BB172622030992900307EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BB172652030992900307EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BB172672030992900307EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB1726C2030992900307EEC /* ChessBoardMemorizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessBoardMemorizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB172702030992900307EEC /* ChessBoardMemorizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoardMemorizerTests.swift; sourceTree = "<group>"; };
+		7BB172722030992900307EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB172772030992900307EEC /* ChessBoardMemorizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessBoardMemorizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB1727B2030992900307EEC /* ChessBoardMemorizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoardMemorizerUITests.swift; sourceTree = "<group>"; };
+		7BB1727D2030992900307EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BB172552030992900307EEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB172692030992900307EEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB172742030992900307EEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BB1724F2030992900307EEC = {
+			isa = PBXGroup;
+			children = (
+				7BB1725A2030992900307EEC /* ChessBoardMemorizer */,
+				7BB1726F2030992900307EEC /* ChessBoardMemorizerTests */,
+				7BB1727A2030992900307EEC /* ChessBoardMemorizerUITests */,
+				7BB172592030992900307EEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BB172592030992900307EEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BB172582030992900307EEC /* ChessBoardMemorizer.app */,
+				7BB1726C2030992900307EEC /* ChessBoardMemorizerTests.xctest */,
+				7BB172772030992900307EEC /* ChessBoardMemorizerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BB1725A2030992900307EEC /* ChessBoardMemorizer */ = {
+			isa = PBXGroup;
+			children = (
+				7BB1725B2030992900307EEC /* AppDelegate.swift */,
+				7BB1725D2030992900307EEC /* ViewController.swift */,
+				7BB1725F2030992900307EEC /* Main.storyboard */,
+				7BB172622030992900307EEC /* Assets.xcassets */,
+				7BB172642030992900307EEC /* LaunchScreen.storyboard */,
+				7BB172672030992900307EEC /* Info.plist */,
+			);
+			path = ChessBoardMemorizer;
+			sourceTree = "<group>";
+		};
+		7BB1726F2030992900307EEC /* ChessBoardMemorizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BB172702030992900307EEC /* ChessBoardMemorizerTests.swift */,
+				7BB172722030992900307EEC /* Info.plist */,
+			);
+			path = ChessBoardMemorizerTests;
+			sourceTree = "<group>";
+		};
+		7BB1727A2030992900307EEC /* ChessBoardMemorizerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BB1727B2030992900307EEC /* ChessBoardMemorizerUITests.swift */,
+				7BB1727D2030992900307EEC /* Info.plist */,
+			);
+			path = ChessBoardMemorizerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BB172572030992900307EEC /* ChessBoardMemorizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB172802030992900307EEC /* Build configuration list for PBXNativeTarget "ChessBoardMemorizer" */;
+			buildPhases = (
+				7BB172542030992900307EEC /* Sources */,
+				7BB172552030992900307EEC /* Frameworks */,
+				7BB172562030992900307EEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChessBoardMemorizer;
+			productName = ChessBoardMemorizer;
+			productReference = 7BB172582030992900307EEC /* ChessBoardMemorizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BB1726B2030992900307EEC /* ChessBoardMemorizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB172832030992900307EEC /* Build configuration list for PBXNativeTarget "ChessBoardMemorizerTests" */;
+			buildPhases = (
+				7BB172682030992900307EEC /* Sources */,
+				7BB172692030992900307EEC /* Frameworks */,
+				7BB1726A2030992900307EEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BB1726E2030992900307EEC /* PBXTargetDependency */,
+			);
+			name = ChessBoardMemorizerTests;
+			productName = ChessBoardMemorizerTests;
+			productReference = 7BB1726C2030992900307EEC /* ChessBoardMemorizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BB172762030992900307EEC /* ChessBoardMemorizerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB172862030992900307EEC /* Build configuration list for PBXNativeTarget "ChessBoardMemorizerUITests" */;
+			buildPhases = (
+				7BB172732030992900307EEC /* Sources */,
+				7BB172742030992900307EEC /* Frameworks */,
+				7BB172752030992900307EEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BB172792030992900307EEC /* PBXTargetDependency */,
+			);
+			name = ChessBoardMemorizerUITests;
+			productName = ChessBoardMemorizerUITests;
+			productReference = 7BB172772030992900307EEC /* ChessBoardMemorizerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BB172502030992900307EEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Artur Honzawa ";
+				TargetAttributes = {
+					7BB172572030992900307EEC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7BB1726B2030992900307EEC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7BB172572030992900307EEC;
+					};
+					7BB172762030992900307EEC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7BB172572030992900307EEC;
+					};
+				};
+			};
+			buildConfigurationList = 7BB172532030992900307EEC /* Build configuration list for PBXProject "ChessBoardMemorizer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BB1724F2030992900307EEC;
+			productRefGroup = 7BB172592030992900307EEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BB172572030992900307EEC /* ChessBoardMemorizer */,
+				7BB1726B2030992900307EEC /* ChessBoardMemorizerTests */,
+				7BB172762030992900307EEC /* ChessBoardMemorizerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BB172562030992900307EEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB172662030992900307EEC /* LaunchScreen.storyboard in Resources */,
+				7BB172632030992900307EEC /* Assets.xcassets in Resources */,
+				7BB172612030992900307EEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB1726A2030992900307EEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB172752030992900307EEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BB172542030992900307EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB1725E2030992900307EEC /* ViewController.swift in Sources */,
+				7BB1725C2030992900307EEC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB172682030992900307EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB172712030992900307EEC /* ChessBoardMemorizerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB172732030992900307EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB1727C2030992900307EEC /* ChessBoardMemorizerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BB1726E2030992900307EEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BB172572030992900307EEC /* ChessBoardMemorizer */;
+			targetProxy = 7BB1726D2030992900307EEC /* PBXContainerItemProxy */;
+		};
+		7BB172792030992900307EEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BB172572030992900307EEC /* ChessBoardMemorizer */;
+			targetProxy = 7BB172782030992900307EEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BB1725F2030992900307EEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BB172602030992900307EEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BB172642030992900307EEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BB172652030992900307EEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BB1727E2030992900307EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BB1727F2030992900307EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BB172812030992900307EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChessBoardMemorizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.arturh.ChessBoardMemorizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BB172822030992900307EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChessBoardMemorizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.arturh.ChessBoardMemorizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7BB172842030992900307EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChessBoardMemorizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.arturh.ChessBoardMemorizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessBoardMemorizer.app/ChessBoardMemorizer";
+			};
+			name = Debug;
+		};
+		7BB172852030992900307EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChessBoardMemorizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.arturh.ChessBoardMemorizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessBoardMemorizer.app/ChessBoardMemorizer";
+			};
+			name = Release;
+		};
+		7BB172872030992900307EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChessBoardMemorizerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.arturh.ChessBoardMemorizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChessBoardMemorizer;
+			};
+			name = Debug;
+		};
+		7BB172882030992900307EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChessBoardMemorizerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.arturh.ChessBoardMemorizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChessBoardMemorizer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BB172532030992900307EEC /* Build configuration list for PBXProject "ChessBoardMemorizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB1727E2030992900307EEC /* Debug */,
+				7BB1727F2030992900307EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BB172802030992900307EEC /* Build configuration list for PBXNativeTarget "ChessBoardMemorizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB172812030992900307EEC /* Debug */,
+				7BB172822030992900307EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BB172832030992900307EEC /* Build configuration list for PBXNativeTarget "ChessBoardMemorizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB172842030992900307EEC /* Debug */,
+				7BB172852030992900307EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BB172862030992900307EEC /* Build configuration list for PBXNativeTarget "ChessBoardMemorizerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB172872030992900307EEC /* Debug */,
+				7BB172882030992900307EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BB172502030992900307EEC /* Project object */;
+}
