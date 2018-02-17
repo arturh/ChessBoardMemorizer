@@ -39,6 +39,8 @@ class BoardViewController: UIViewController {
         displaySquareList()
         shouldShowSquareNames = false
         label.backgroundColor = UIColor.clear
+        
+        AudioServicesPlaySystemSound(1103)
     }
     
     private func miss() {
@@ -47,6 +49,8 @@ class BoardViewController: UIViewController {
         
         shouldShowSquareNames = missed > 1
         label.backgroundColor = UIColor.red
+        
+        AudioServicesPlaySystemSound(1053);
     }
 }
 
@@ -108,28 +112,6 @@ extension BoardViewController: UICollectionViewDelegateFlowLayout {
         }
         
         collectionView.reloadData()
-    }
-}
-
-class SquareCell: UICollectionViewCell {
-    static let identifier = "SquareCell"
-    
-    @IBOutlet weak var label: UILabel!
-    
-    var shouldShowSquareNames: Bool = false
-    var square: Square! {
-        didSet {
-            switch square.color {
-            case .dark:
-                backgroundColor = UIColor.black
-            case .light:
-                backgroundColor = UIColor.white
-            }
-            
-            label.text = shouldShowSquareNames
-                ? square.name
-                : nil
-        }
     }
 }
 
