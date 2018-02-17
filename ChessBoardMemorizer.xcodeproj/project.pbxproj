@@ -15,6 +15,7 @@
 		7BB172712030992900307EEC /* ChessBoardMemorizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB172702030992900307EEC /* ChessBoardMemorizerTests.swift */; };
 		7BB1727C2030992900307EEC /* ChessBoardMemorizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1727B2030992900307EEC /* ChessBoardMemorizerUITests.swift */; };
 		7BB1728A2038247100307EEC /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB172892038247100307EEC /* Main2.storyboard */; };
+		7BB1728C2038363E00307EEC /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1728B2038363E00307EEC /* BoardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7BB1727B2030992900307EEC /* ChessBoardMemorizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoardMemorizerUITests.swift; sourceTree = "<group>"; };
 		7BB1727D2030992900307EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BB172892038247100307EEC /* Main2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
+		7BB1728B2038363E00307EEC /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				7BB172622030992900307EEC /* Assets.xcassets */,
 				7BB172642030992900307EEC /* LaunchScreen.storyboard */,
 				7BB172672030992900307EEC /* Info.plist */,
+				7BB1728B2038363E00307EEC /* BoardViewController.swift */,
 			);
 			path = ChessBoardMemorizer;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				7BB1725E2030992900307EEC /* ViewController.swift in Sources */,
 				7BB1725C2030992900307EEC /* AppDelegate.swift in Sources */,
+				7BB1728C2038363E00307EEC /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
