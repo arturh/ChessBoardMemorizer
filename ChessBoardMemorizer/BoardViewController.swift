@@ -78,11 +78,16 @@ extension BoardViewController: UICollectionViewDelegateFlowLayout {
         _ collectionView: UICollectionView,
         didSelectItemAt indexPath: IndexPath)
     {
-        label.text = square(from: indexPath).name
+        let selectedSquare = square(from: indexPath)
+        if .some(selectedSquare) == squareList.next {
+            squareList.pop()
+            displaySquareList()
+            label.backgroundColor = UIColor.clear
+        } else {
+            label.backgroundColor = UIColor.red
+        }
     }
 }
-
-
 
 struct Square {
     let file: Int
@@ -108,6 +113,13 @@ extension Square {
         let rankName = rankNames[rank]
         
         return "\(fileName)\(rankName)"
+    }
+}
+
+extension Square: Equatable {
+    static func == (lhs: Square, rhs: Square) -> Bool {
+        return lhs.file == rhs.file
+            && lhs.rank == rhs.rank
     }
 }
 
