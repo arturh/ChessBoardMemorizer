@@ -319,8 +319,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYx-5M-h5c">
-                                <rect key="frame" x="166" y="194" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="16" y="176.66666666666666" width="343" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -367,10 +367,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cv5-2w-uxb" firstAttribute="top" secondItem="OYx-5M-h5c" secondAttribute="bottom" constant="8.6666666666666288" id="5y8-iz-opw"/>
-                            <constraint firstItem="OYx-5M-h5c" firstAttribute="centerX" secondItem="UfS-3l-pf7" secondAttribute="centerX" id="Kvy-CV-ROy"/>
                             <constraint firstItem="cv5-2w-uxb" firstAttribute="centerX" secondItem="UfS-3l-pf7" secondAttribute="centerX" id="QlH-MG-h4y"/>
                             <constraint firstItem="cv5-2w-uxb" firstAttribute="centerY" secondItem="UfS-3l-pf7" secondAttribute="centerY" id="Wun-UZ-qDs"/>
                             <constraint firstItem="cv5-2w-uxb" firstAttribute="width" secondItem="UfS-3l-pf7" secondAttribute="width" id="aaA-9u-nvW"/>
+                            <constraint firstItem="OYx-5M-h5c" firstAttribute="leading" secondItem="UfS-3l-pf7" secondAttribute="leading" constant="16" id="pgp-gl-1t2"/>
+                            <constraint firstItem="UfS-3l-pf7" firstAttribute="trailing" secondItem="OYx-5M-h5c" secondAttribute="trailing" constant="16" id="s3d-4E-SAO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UfS-3l-pf7"/>
                     </view>
