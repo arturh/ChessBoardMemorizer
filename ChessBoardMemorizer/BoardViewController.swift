@@ -15,6 +15,11 @@ class BoardViewController: UIViewController {
     
     private var squareList: SquareList = SquareList()
     
+    private var missed: Int = 0
+    private var hitStreak: Int = 0
+    
+    private var shouldShowSquareNames = false
+    
     override func viewDidLoad() {
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -24,6 +29,29 @@ class BoardViewController: UIViewController {
     
     func displaySquareList() {
         label.text = squareList.asString()
+    }
+    
+    private func hit() {
+        hitStreak += 1
+        missed = 0
+        
+        shouldShowSquareNames = false
+        
+        squareList.pop()
+        displaySquareList()
+        label.backgroundColor = UIColor.clear
+        
+        collectionView.reloadData()
+    }
+    
+    private func miss() {
+        hitStreak = 0
+        missed += 1
+        
+        label.backgroundColor = UIColor.red
+        shouldShowSquareNames = missed > 1
+        
+        collectionView.reloadData()
     }
 }
 
@@ -51,6 +79,7 @@ extension BoardViewController: UICollectionViewDataSource {
                 for: indexPath)
             as! SquareCell
         cell.square = square(from: indexPath)
+        cell.shouldShowSquareNames = shouldShowSquareNames
         return cell
     }
     
@@ -76,12 +105,14 @@ extension BoardViewController: UICollectionViewDelegateFlowLayout {
     {
         let selectedSquare = square(from: indexPath)
         if .some(selectedSquare) == squareList.next {
-            squareList.pop()
-            displaySquareList()
-            label.backgroundColor = UIColor.clear
+            hit()
         } else {
-            label.backgroundColor = UIColor.red
+            miss()
         }
+        
+        print("shouldShowSquareNames: \(shouldShowSquareNames)")
+        print("missed: \(missed)")
+        print("hisStreak: \(hitStreak)")
     }
 }
 
@@ -124,6 +155,7 @@ class SquareCell: UICollectionViewCell {
     
     @IBOutlet weak var label: UILabel!
     
+    var shouldShowSquareNames: Bool = false
     var square: Square! {
         didSet {
             switch square.color {
@@ -132,7 +164,10 @@ class SquareCell: UICollectionViewCell {
             case .light:
                 backgroundColor = UIColor.white
             }
-            label.text = square.name
+            
+            label.text = shouldShowSquareNames
+                ? square.name
+                : nil
         }
     }
 }

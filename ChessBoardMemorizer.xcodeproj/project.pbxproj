@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7BB1725C2030992900307EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1725B2030992900307EEC /* AppDelegate.swift */; };
-		7BB1725E2030992900307EEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1725D2030992900307EEC /* ViewController.swift */; };
 		7BB172612030992900307EEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB1725F2030992900307EEC /* Main.storyboard */; };
 		7BB172632030992900307EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB172622030992900307EEC /* Assets.xcassets */; };
 		7BB172662030992900307EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB172642030992900307EEC /* LaunchScreen.storyboard */; };
 		7BB172712030992900307EEC /* ChessBoardMemorizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB172702030992900307EEC /* ChessBoardMemorizerTests.swift */; };
 		7BB1727C2030992900307EEC /* ChessBoardMemorizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1727B2030992900307EEC /* ChessBoardMemorizerUITests.swift */; };
-		7BB1728A2038247100307EEC /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB172892038247100307EEC /* Main2.storyboard */; };
 		7BB1728C2038363E00307EEC /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1728B2038363E00307EEC /* BoardViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +36,6 @@
 /* Begin PBXFileReference section */
 		7BB172582030992900307EEC /* ChessBoardMemorizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessBoardMemorizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB1725B2030992900307EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BB1725D2030992900307EEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BB172602030992900307EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BB172622030992900307EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB172652030992900307EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,7 +46,6 @@
 		7BB172772030992900307EEC /* ChessBoardMemorizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessBoardMemorizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB1727B2030992900307EEC /* ChessBoardMemorizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoardMemorizerUITests.swift; sourceTree = "<group>"; };
 		7BB1727D2030992900307EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BB172892038247100307EEC /* Main2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 		7BB1728B2038363E00307EEC /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,9 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				7BB1725B2030992900307EEC /* AppDelegate.swift */,
-				7BB1725D2030992900307EEC /* ViewController.swift */,
 				7BB1725F2030992900307EEC /* Main.storyboard */,
-				7BB172892038247100307EEC /* Main2.storyboard */,
 				7BB172622030992900307EEC /* Assets.xcassets */,
 				7BB172642030992900307EEC /* LaunchScreen.storyboard */,
 				7BB172672030992900307EEC /* Info.plist */,
@@ -240,7 +234,6 @@
 			files = (
 				7BB172662030992900307EEC /* LaunchScreen.storyboard in Resources */,
 				7BB172632030992900307EEC /* Assets.xcassets in Resources */,
-				7BB1728A2038247100307EEC /* Main2.storyboard in Resources */,
 				7BB172612030992900307EEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BB1725E2030992900307EEC /* ViewController.swift in Sources */,
 				7BB1725C2030992900307EEC /* AppDelegate.swift in Sources */,
 				7BB1728C2038363E00307EEC /* BoardViewController.swift in Sources */,
 			);
