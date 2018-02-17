@@ -13,11 +13,7 @@ class BoardViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var label: UILabel!
     
-    var squareList: SquareList = {
-        var result = SquareList(squares: [])
-        result.fill()
-        return result
-    }()
+    private var squareList: SquareList = SquareList()
     
     override func viewDidLoad() {
         collectionView.dataSource = self
@@ -142,20 +138,27 @@ class SquareCell: UICollectionViewCell {
 }
 
 struct SquareList {
-    var squares: [Square]
+    private var squares: [Square] = []
+    
+    init() {
+        fill()
+    }
+    
     var next: Square? { return squares.first }
 }
 
 extension SquareList {
     func asString() -> String {
-        return squares.map { $0.name }.joined(separator: ", ")
+        return squares
+            .map { $0.name }
+            .joined(separator: ", ")
     }
     
     mutating func pop() {
         squares.removeFirst()
     }
     
-    mutating func fill() {
+    private mutating func fill() {
         let fileSource = GKRandomDistribution(lowestValue: 0, highestValue: 7)
         let rankSource = GKRandomDistribution(lowestValue: 0, highestValue: 7)
         
