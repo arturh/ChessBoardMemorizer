@@ -36,13 +36,17 @@ extension BoardViewController: UICollectionViewDataSource {
         cellForItemAt indexPath: IndexPath)
         -> UICollectionViewCell
     {
-        let square = Square(file: indexPath.row % 8, rank: 7 - indexPath.row / 8)
-        let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: SquareCell.identifier,
-            for: indexPath)
+        let cell = collectionView
+            .dequeueReusableCell(
+                withReuseIdentifier: SquareCell.identifier,
+                for: indexPath)
             as! SquareCell
-        cell.square = square
+        cell.square = square(from: indexPath)
         return cell
+    }
+    
+    func square(from indexPath: IndexPath) -> Square {
+        return Square(file: indexPath.row % 8, rank: 7 - indexPath.row / 8)
     }
 }
 
@@ -57,8 +61,11 @@ extension BoardViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: side, height: side)
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        label.text = String(describing: indexPath)
+    func collectionView(
+        _ collectionView: UICollectionView,
+        didSelectItemAt indexPath: IndexPath)
+    {
+        label.text = square(from: indexPath).name
     }
 }
 
@@ -73,7 +80,7 @@ extension Square {
     enum Color {
         case dark, light
     }
-
+    
     var color: Color {
         return (rank + file) % 2 == 0
             ? .dark
