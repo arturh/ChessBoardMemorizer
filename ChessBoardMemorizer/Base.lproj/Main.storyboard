@@ -337,8 +337,23 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdt-Ct-PxY">
+                                                    <rect key="frame" x="14" y="12" width="16" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
                                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Jdt-Ct-PxY" firstAttribute="centerX" secondItem="1jU-32-7lX" secondAttribute="centerX" id="FEc-Y9-RXO"/>
+                                            <constraint firstItem="Jdt-Ct-PxY" firstAttribute="centerY" secondItem="1jU-32-7lX" secondAttribute="centerY" id="hzU-zx-Xqh"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="Jdt-Ct-PxY" id="wg0-d4-WoI"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

@@ -57,19 +57,45 @@ extension BoardViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+enum SquareColor {
+    case dark, light
+}
+
 class SquareCell: UICollectionViewCell {
+    
+    
     static let identifier = "SquareCell"
     
-    var rank: Int { return indexPath.row % 8 }
-    var file: Int { return indexPath.row / 8 }
-    var isBackgroundLight: Bool { return (rank + file) % 2 == 0 }
+    @IBOutlet weak var label: UILabel!
+    
+    var file: Int { return indexPath.row % 8 }
+    var rank: Int { return 7 - indexPath.row / 8 }
+    
+    var name: String {
+        let fileNames = ["a", "b", "c", "d", "e", "f", "g", "h"]
+        let rankNames = ["1", "2", "3", "4", "5", "6", "7", "8"]
+        let fileName = fileNames[file]
+        let rankName = rankNames[rank]
+        
+        return "\(fileName)\(rankName)"
+    }
+    
+    var squareColor: SquareColor {
+        return (rank + file) % 2 == 0
+            ? .dark
+            : .light
+    }
     
     var indexPath: IndexPath! {
         didSet {
-            backgroundColor = isBackgroundLight
-                ? UIColor.white
-                : UIColor.black
+            switch squareColor {
+            case .dark:
+                backgroundColor = UIColor.black
+            case .light:
+                backgroundColor = UIColor.white
+            }
             
+            label.text = name
         }
     }
 }
