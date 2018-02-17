@@ -10,12 +10,12 @@ import UIKit
 
 class BoardViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         collectionView.dataSource = self
         collectionView.delegate = self
     }
-    
 }
 
 extension BoardViewController: UICollectionViewDataSource {
@@ -36,11 +36,12 @@ extension BoardViewController: UICollectionViewDataSource {
         cellForItemAt indexPath: IndexPath)
         -> UICollectionViewCell
     {
+        let square = Square(file: indexPath.row % 8, rank: 7 - indexPath.row / 8)
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: SquareCell.identifier,
             for: indexPath)
             as! SquareCell
-        cell.indexPath = indexPath
+        cell.square = square
         return cell
     }
 }
@@ -55,47 +56,55 @@ extension BoardViewController: UICollectionViewDelegateFlowLayout {
         let side = collectionView.bounds.width / 8
         return CGSize(width: side, height: side)
     }
-}
-
-enum SquareColor {
-    case dark, light
-}
-
-class SquareCell: UICollectionViewCell {
     
-    
-    static let identifier = "SquareCell"
-    
-    @IBOutlet weak var label: UILabel!
-    
-    var file: Int { return indexPath.row % 8 }
-    var rank: Int { return 7 - indexPath.row / 8 }
-    
-    var name: String {
-        let fileNames = ["a", "b", "c", "d", "e", "f", "g", "h"]
-        let rankNames = ["1", "2", "3", "4", "5", "6", "7", "8"]
-        let fileName = fileNames[file]
-        let rankName = rankNames[rank]
-        
-        return "\(fileName)\(rankName)"
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        label.text = String(describing: indexPath)
     }
-    
-    var squareColor: SquareColor {
+}
+
+
+
+struct Square {
+    let file: Int
+    let rank: Int
+}
+
+extension Square {
+    enum Color {
+        case dark, light
+    }
+
+    var color: Color {
         return (rank + file) % 2 == 0
             ? .dark
             : .light
     }
     
-    var indexPath: IndexPath! {
+    var name: String {
+        let fileNames = ["a", "b", "c", "d", "e", "f", "g", "h"]
+        let rankNames = ["1", "2", "3", "4", "5", "6", "7", "8"]
+        
+        let fileName = fileNames[file]
+        let rankName = rankNames[rank]
+        
+        return "\(fileName)\(rankName)"
+    }
+}
+
+class SquareCell: UICollectionViewCell {
+    static let identifier = "SquareCell"
+    
+    @IBOutlet weak var label: UILabel!
+    
+    var square: Square! {
         didSet {
-            switch squareColor {
+            switch square.color {
             case .dark:
                 backgroundColor = UIColor.black
             case .light:
                 backgroundColor = UIColor.white
             }
-            
-            label.text = name
+            label.text = square.name
         }
     }
 }
