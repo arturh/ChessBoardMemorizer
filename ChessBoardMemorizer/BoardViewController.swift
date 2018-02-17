@@ -17,8 +17,7 @@ class BoardViewController: UIViewController {
     
     private var missed: Int = 0
     private var hitStreak: Int = 0
-    
-    private var shouldShowSquareNames: Bool = false
+    private var shouldShowSquareNames: Bool = true
     
     override func viewDidLoad() {
         collectionView.dataSource = self
@@ -37,7 +36,7 @@ class BoardViewController: UIViewController {
         
         squareList.pop()
         displaySquareList()
-        shouldShowSquareNames = false
+        shouldShowSquareNames = shouldShowSquareNames && hitStreak == 1
         label.backgroundColor = UIColor.clear
         
         AudioServicesPlaySystemSound(1103)
