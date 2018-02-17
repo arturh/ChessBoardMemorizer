@@ -14,6 +14,7 @@
 		7BB172662030992900307EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB172642030992900307EEC /* LaunchScreen.storyboard */; };
 		7BB172712030992900307EEC /* ChessBoardMemorizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB172702030992900307EEC /* ChessBoardMemorizerTests.swift */; };
 		7BB1727C2030992900307EEC /* ChessBoardMemorizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1727B2030992900307EEC /* ChessBoardMemorizerUITests.swift */; };
+		7BB1728A2038247100307EEC /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB172892038247100307EEC /* Main2.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7BB172772030992900307EEC /* ChessBoardMemorizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessBoardMemorizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB1727B2030992900307EEC /* ChessBoardMemorizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoardMemorizerUITests.swift; sourceTree = "<group>"; };
 		7BB1727D2030992900307EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB172892038247100307EEC /* Main2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				7BB1725B2030992900307EEC /* AppDelegate.swift */,
 				7BB1725D2030992900307EEC /* ViewController.swift */,
 				7BB1725F2030992900307EEC /* Main.storyboard */,
+				7BB172892038247100307EEC /* Main2.storyboard */,
 				7BB172622030992900307EEC /* Assets.xcassets */,
 				7BB172642030992900307EEC /* LaunchScreen.storyboard */,
 				7BB172672030992900307EEC /* Info.plist */,
@@ -234,6 +237,7 @@
 			files = (
 				7BB172662030992900307EEC /* LaunchScreen.storyboard in Resources */,
 				7BB172632030992900307EEC /* Assets.xcassets in Resources */,
+				7BB1728A2038247100307EEC /* Main2.storyboard in Resources */,
 				7BB172612030992900307EEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
