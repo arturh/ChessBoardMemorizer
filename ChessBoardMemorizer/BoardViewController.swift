@@ -18,7 +18,7 @@ class BoardViewController: UIViewController {
     private var missed: Int = 0
     private var hitStreak: Int = 0
     
-    private var shouldShowSquareNames = false
+    private var shouldShowSquareNames: Bool = false
     
     override func viewDidLoad() {
         collectionView.dataSource = self
@@ -35,23 +35,18 @@ class BoardViewController: UIViewController {
         hitStreak += 1
         missed = 0
         
-        shouldShowSquareNames = false
-        
         squareList.pop()
         displaySquareList()
+        shouldShowSquareNames = false
         label.backgroundColor = UIColor.clear
-        
-        collectionView.reloadData()
     }
     
     private func miss() {
         hitStreak = 0
         missed += 1
         
-        label.backgroundColor = UIColor.red
         shouldShowSquareNames = missed > 1
-        
-        collectionView.reloadData()
+        label.backgroundColor = UIColor.red
     }
 }
 
@@ -78,8 +73,10 @@ extension BoardViewController: UICollectionViewDataSource {
                 withReuseIdentifier: SquareCell.identifier,
                 for: indexPath)
             as! SquareCell
-        cell.square = square(from: indexPath)
+        
         cell.shouldShowSquareNames = shouldShowSquareNames
+        cell.square = square(from: indexPath)
+        
         return cell
     }
     
@@ -110,43 +107,7 @@ extension BoardViewController: UICollectionViewDelegateFlowLayout {
             miss()
         }
         
-        print("shouldShowSquareNames: \(shouldShowSquareNames)")
-        print("missed: \(missed)")
-        print("hisStreak: \(hitStreak)")
-    }
-}
-
-struct Square {
-    let file: Int
-    let rank: Int
-}
-
-extension Square {
-    enum Color {
-        case dark, light
-    }
-    
-    var color: Color {
-        return (rank + file) % 2 == 0
-            ? .dark
-            : .light
-    }
-    
-    var name: String {
-        let fileNames = ["a", "b", "c", "d", "e", "f", "g", "h"]
-        let rankNames = ["1", "2", "3", "4", "5", "6", "7", "8"]
-        
-        let fileName = fileNames[file]
-        let rankName = rankNames[rank]
-        
-        return "\(fileName)\(rankName)"
-    }
-}
-
-extension Square: Equatable {
-    static func == (lhs: Square, rhs: Square) -> Bool {
-        return lhs.file == rhs.file
-            && lhs.rank == rhs.rank
+        collectionView.reloadData()
     }
 }
 
@@ -172,38 +133,3 @@ class SquareCell: UICollectionViewCell {
     }
 }
 
-struct SquareList {
-    private var squares: [Square] = []
-    
-    init() {
-        fill()
-    }
-    
-    var next: Square? { return squares.first }
-}
-
-extension SquareList {
-    func asString() -> String {
-        return squares
-            .map { $0.name }
-            .joined(separator: ", ")
-    }
-    
-    mutating func pop() {
-        squares.removeFirst()
-    }
-    
-    private mutating func fill() {
-        let fileSource = GKRandomDistribution(lowestValue: 0, highestValue: 7)
-        let rankSource = GKRandomDistribution(lowestValue: 0, highestValue: 7)
-        
-        (0...100).forEach { _ in
-            squares.append(
-                Square(
-                    file: fileSource.nextInt(),
-                    rank: rankSource.nextInt()
-                )
-            )
-        }
-    }
-}

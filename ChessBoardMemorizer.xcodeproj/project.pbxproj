@@ -14,6 +14,8 @@
 		7BB172712030992900307EEC /* ChessBoardMemorizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB172702030992900307EEC /* ChessBoardMemorizerTests.swift */; };
 		7BB1727C2030992900307EEC /* ChessBoardMemorizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1727B2030992900307EEC /* ChessBoardMemorizerUITests.swift */; };
 		7BB1728C2038363E00307EEC /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1728B2038363E00307EEC /* BoardViewController.swift */; };
+		7BBB82082038881A00772A59 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBB82072038881A00772A59 /* Square.swift */; };
+		7BBB820A2038883B00772A59 /* SquareList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBB82092038883B00772A59 /* SquareList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		7BB1727B2030992900307EEC /* ChessBoardMemorizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoardMemorizerUITests.swift; sourceTree = "<group>"; };
 		7BB1727D2030992900307EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BB1728B2038363E00307EEC /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		7BBB82072038881A00772A59 /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		7BBB82092038883B00772A59 /* SquareList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				7BB172642030992900307EEC /* LaunchScreen.storyboard */,
 				7BB172672030992900307EEC /* Info.plist */,
 				7BB1728B2038363E00307EEC /* BoardViewController.swift */,
+				7BBB82072038881A00772A59 /* Square.swift */,
+				7BBB82092038883B00772A59 /* SquareList.swift */,
 			);
 			path = ChessBoardMemorizer;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BBB820A2038883B00772A59 /* SquareList.swift in Sources */,
+				7BBB82082038881A00772A59 /* Square.swift in Sources */,
 				7BB1725C2030992900307EEC /* AppDelegate.swift in Sources */,
 				7BB1728C2038363E00307EEC /* BoardViewController.swift in Sources */,
 			);
