@@ -13,11 +13,7 @@ class BoardViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var label: UILabel!
     
-    private var squareList: SquareList = SquareList()
-    
-    private var missed: Int = 0
-    private var hitStreak: Int = 0
-    private var shouldShowSquareNames: Bool = true
+    private var game: Game = Game()
     
     override func viewDidLoad() {
         collectionView.dataSource = self
@@ -27,30 +23,12 @@ class BoardViewController: UIViewController {
     }
     
     func displaySquareList() {
-        label.text = squareList.asString()
+        label.text = game
+            .upcomingSquares
+            .map { $0.name }
+            .joined(separator: ", ")
     }
     
-    private func hit() {
-        hitStreak += 1
-        missed = 0
-        
-        squareList.pop()
-        displaySquareList()
-        shouldShowSquareNames = shouldShowSquareNames && hitStreak == 1
-        label.backgroundColor = UIColor.clear
-        
-        AudioServicesPlaySystemSound(1103)
-    }
-    
-    private func miss() {
-        hitStreak = 0
-        missed += 1
-        
-        shouldShowSquareNames = missed > 1
-        label.backgroundColor = UIColor.red
-        
-        AudioServicesPlaySystemSound(1053);
-    }
 }
 
 extension BoardViewController: UICollectionViewDataSource {
@@ -77,14 +55,16 @@ extension BoardViewController: UICollectionViewDataSource {
                 for: indexPath)
             as! SquareCell
         
-        cell.shouldShowSquareNames = shouldShowSquareNames
+        cell.shouldShowSquareNames = game.shouldShowSquareNames
         cell.square = square(from: indexPath)
         
         return cell
     }
     
     func square(from indexPath: IndexPath) -> Square {
-        return Square(file: indexPath.row % 8, rank: 7 - indexPath.row / 8)
+        return Square(
+            file: indexPath.row % 8,
+            rank: 7 - indexPath.row / 8)
     }
 }
 
@@ -104,12 +84,16 @@ extension BoardViewController: UICollectionViewDelegateFlowLayout {
         didSelectItemAt indexPath: IndexPath)
     {
         let selectedSquare = square(from: indexPath)
-        if .some(selectedSquare) == squareList.next {
-            hit()
-        } else {
-            miss()
+        switch game.process(selectedSquare) {
+        case .hit:
+            label.backgroundColor = UIColor.clear
+            AudioServicesPlaySystemSound(1103)
+        case .miss:
+            label.backgroundColor = UIColor.red
+            AudioServicesPlaySystemSound(1053);
         }
         
+        displaySquareList()
         collectionView.reloadData()
     }
 }
