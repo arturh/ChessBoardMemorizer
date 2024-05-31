@@ -1,0 +1,84 @@
+# Xcode
+.DS_Store
+!*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+*.xcworkspace/xcuserdata
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+!*.xcodeproj
+*.xcodeproj/xcuserdata
+*.xcodeproj/project.xcworkspace
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+*.xcodeproj/project.xcworkspace/xcuserdata
+*.xcodeproj/project.xcworkspace/xcshareddata
+*.xcuserstate
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Swift Package Manager
+# Add this line if you have `*.xcodeproj` files checked in to your repository.
+Packages
+# Add this line if you have `*.swiftpm` directory checked in to your repository.
+.swiftpm
+.build
+
+# CocoaPods
+Pods
+Podfile.lock
+*.xcscmblueprint
+
+# Carthage
+Carthage/Build
+
+# Accio dependency management
+Dependencies
+.accio
+
+# fastlane
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+*/fastlane/test_output
+*/fastlane/report.html
+
+# Code Coverage
+*.xccovreport
+*.xccovarchive
+
+# Archived files
+*.xcarchive
+
+# Derived data
+DerivedData
+*.hmap
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Other
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.bks
+
+# AppCode
+.idea/
+
+# App Store
+*.itmsp
+
+# Xcode Scheme files
+xcuserdata
+
+# SwiftPM
+.swiftpm/xcode
+
+# Temporary files
+*.temp/
+*.swp
